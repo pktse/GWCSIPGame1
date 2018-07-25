@@ -852,8 +852,7 @@ if ( x == 16 && ok != 1){//check first space (start game)
      document.getElementById("gamescreen").style.display= "none";
      document.getElementById("sixthscreen").style.display= "block";
      window.current_screen = "sixthscreen";
-      document.getElementById("arrowLeft").style.display= "none";
-       document.getElementById("arrowright").style.display= "none";
+
    }
    else if (current_screen === "sixthscreen") {
      document.getElementById("startScreen").style.display= "none";
@@ -865,8 +864,7 @@ if ( x == 16 && ok != 1){//check first space (start game)
      document.getElementById("sixthscreen").style.display= "none";
      ok = 1;
      window.current_screen = "gamescreen";
-      document.getElementById("arrowLeft").style.display= "none";
-       document.getElementById("arrowright").style.display= "none";
+
    }
  }
  if ( x == 37 && ok != 1){
