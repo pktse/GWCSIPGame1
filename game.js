@@ -198,42 +198,42 @@ function component(width, height, color, x, y, type) {
     ctx = myGameArea.context;
     if (type == "image" || type == "background" || type == "text" || type == "obstacle" || type == "end") { //draws each image
       if (type == "image"){
-        this.image.onload = function(){
+        this.image.addEventListener('load', function() {
           ctx.drawImage(this.image,
           this.x,
           this.y,
           this.width, this.height);
-        };
+        }, false);
       }
       if (type == "end"){
-        this.image.onload = function(){
+        this.image.addEventListener('load', function() {
           ctx.drawImage(this.image,
           this.x,
           this.y,
           this.width, this.height);
-        };
+        }, false);
       }
       if (type == "obstacle"){
-        this.image.onload = function(){
+        this.image.addEventListener('load', function() {
           ctx.drawImage(this.image,
           this.x,
           this.y,
           this.width, this.height);
-        };
+        }, false);
       }
       if (type == "background") {
-        this.image.onload = function(){
+        this.image.addEventListener('load', function() {
           ctx.drawImage(this.image,
           this.x,
           this.y,
           this.width, this.height);
-        };
-        this.image.onload = function(){
+        }, false);
+        this.image.addEventListener('load', function() {
           ctx.drawImage(this.image,
           this.x + this.width-60,
           this.y,
           this.width, this.height);
-        };
+        }, false);
       }
       if (type == "text") {
         ctx.font = this.width + " " + this.height;
