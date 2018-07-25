@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+  <link rel = "stylesheet" type = "text/css" href = "style.css">
+  <link href="https://fonts.googleapis.com/css?family=Faster+One|Nanum+Pen+Script|Parisienne|Petit+Formal+Script|Special+Elite|Walter+Turncoat|Yesteryear" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli|Questrial|Quicksand" rel="stylesheet">
+  <title> Home </title>
+
+</head>
+
+<body style="overflow:hidden;" onkeydown="keyCode(event)" onload = "random()">
+  <!-- <p id = "arrowright"> &#8680; </p>
+  <p id = "arrowLeft"> &#x21E6; </p> -->
+		<div style="overflow:absolute; position:absolute; top: 0; left:0; right:0; bottom:0">
+
+		    <div id="startScreen"  >
+           <h1> LI  ES </h1>
+           <img src="babies/boy1.svg" id="baby1" height="400" width="320">
+          <img src="babies/flipped/girl11.svg" id="baby2" height="400" width="320">
+           <p style = "position:absolute;
+          text-align:center;
+          color: #222;
+          font-size: 15px;
+          text-shadow: 0 1px 2px;
+          animation: pulse 6s linear infinite;
+          font-family: 'Aldrich', sans-serif;
+          top: 30px;
+          left: 285px;"> v </p>
+          <div> <p style = "
+            font-weight: bold;
+          font-family: 'Aldrich', sans-serif;
+          position: absolute;
+          top: 100px;
+          left: 60px;"> By: JPIG <br> (Joyce Guo, Patricia Tse, Isabelle Hales, Genia Druzhinina) </p> </div>
+		      <div> <p> Press arrow keys to continue  <br> press shift to skip instructions </p> </div>
+        </div>
+
+        <div id="secondscreen" >
+          <p> Very often both men and women are judged based on social norms,<br>
+                   Yet most people don't fall into these unrealistic traits.<br>
+                   These sterotypes prevent us from discovering<br>
+         				   our true identities </p>
+          <img src="Stork.svg" id="stork1" height="400" width="320">
+        </div>
+
+        <div id="thirdscreen">
+          <p><img src="items/Boys/Train.svg" id="train" height="42" width="42"> LIvES is a way of discussing social norms in a simple way<br><br><br><br><br><br><br>
+			             <img src="items/Girls/Doll.svg" id= "doll" height="42" width="42"> We decided to make this game exposing expectations placed on people starting from<br>
+		               a young age to adulthood.</p>
+            <img id= "stork2" src="Stork.svg" height="400" width="320">
+        </div>
+
+        <div id="fourthscreen" >
+          <p><img src="items/Neutral/Family.svg" id="family" height="100" width="100">
+                    We hope this game raises awareness about how restrictive <br>
+				            societal norms and expectations are towards everyone.</p>
+                     <img src="Stork.svg" id="stork3" height="400" width="320">
+                   </div>
+
+      <div id="fifthscreen" >
+        <p style = "font-size: 45px;"> Instructions </p> <p style = "top: 75px;">
+                 You will randomly be given either a boy or girl character. During
+                  the game, you will go through 3 stages; baby, teen, and adult.
+                  In each stage you will get points for collecting sterotypicial
+                  items your gender would like to expose the absurdity of societal norms. To move around,
+                use the arrow keys. </p>
+       <img src="Stork.svg" height="400" width="320" id="stork4">
+    </div>
+
+    <div id = "sixthscreen">
+      <table style="width:600px; text-align: center; margin: auto;">
+        <tr>
+          <th id="bbb">Boys</th>
+          <th id="nnn">Neutral</th>
+          <th id="ggg">Girls</th>
+        </tr>
+        <tr>
+          <td><img class="boy" src="items/Boys/Train.svg" alt="train"></td>
+          <td><img class="new" src="items/Neutral/House.svg" alt="house"></td>
+          <td><img class="girl" src="items/Girls/Doll.svg" alt="doll"></td>
+        </tr>
+        <tr>
+          <td><img class="boy" src="items/Boys/legoes.svg" alt="LEgo"></td>
+          <td><img class="girl" src="items/Neutral/Family.svg" alt="fam"></td>
+          <td><img class="girl" src="items/Girls/ragdoll.svg" alt="rag"></td>
+        </tr>
+        <tr>
+          <td><img class="boy" src="items/Boys/Weights.svg" alt="weights"></td>
+          <td></td>
+          <td><img class="girl" id="mk" src="items/Girls/Makeup.svg" alt="mkup"></td>
+        </tr>
+        <tr>
+          <td><img class="boy" src="items/Boys/Videogame.svg" alt="vg"></td>
+          <td></td>
+          <td><img class="girl" src="items/Girls/Fashion.svg" alt="fashion"></td>
+        </tr>
+        <tr>
+          <td><img class="boy" src="items/Boys/Job.svg" alt="job"></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="gamescreen" >
+      <h1> LIvES </h1>
+
+      <table id = "key" style="width:100px; text-align: center;">
+        <tr>
+          <th>Boys</th>
+          <th >Neutral</th>
+          <th >Girls</th>
+        </tr>
+        <tr>
+          <td><img class="boy2" src="items/Boys/Train.svg" alt="train"></td>
+          <td><img class="new2" src="items/Neutral/House.svg" alt="house"></td>
+          <td><img class="girl2" src="items/Girls/Doll.svg" alt="doll"></td>
+        </tr>
+        <tr>
+          <td><img class="boy2" src="items/Boys/legoes.svg" alt="LEgo"></td>
+          <td><img class="girl2" src="items/Neutral/Family.svg" alt="fam"></td>
+          <td><img class="girl2" src="items/Girls/ragdoll.svg" alt="rag"></td>
+        </tr>
+        <tr>
+          <td><img class="boy2" src="items/Boys/Weights.svg" alt="weights"></td>
+          <td></td>
+          <td><img class="girl2" id="mk2" src="items/Girls/Makeup.svg" alt="mkup"></td>
+        </tr>
+        <tr>
+          <td><img class="boy2" src="items/Boys/Videogame.svg" alt="vg"></td>
+          <td></td>
+          <td><img class="girl2" src="items/Girls/Fashion.svg" alt="fashion"></td>
+        </tr>
+        <tr>
+          <td><img class="boy2" src="items/Boys/Job.svg" alt="job"></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+
+      <img src="Stork.svg" height="400" width="320" id="stork5">
+      <p> <br> <br> <br> <br> <br> <br> <br> </p>
+      <p id = "press">Press Space to start </p>
+      <p> <br> <br> <br> <br>  <br> <br>  <br> <br> </p>
+      <p> You have 3 lives. When you collect the wrong item 3 times, you lose 1 life. </p>
+
+  <p > Controls: <br>  &#8592; - move left
+ <br>  &#8594; - move right
+<br> &#8595; - move down
+<br>  &#8593; - jump
+</p>
+      <script src = "game.js"> </script>
+    </div>
+</div>
+
+</body>
+</html>
