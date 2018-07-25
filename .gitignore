@@ -1,6 +1,14 @@
 *
 !.gitignore
 
+!/adult/
+!/babies/
+!/background/
+!/items/
+!/teen/
+
+
+
 
 !/adult/man/skin1.svg
 !/adult/man/skin2.svg
