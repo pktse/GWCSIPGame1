@@ -198,7 +198,7 @@ function component(width, height, color, x, y, type) {
     ctx = myGameArea.context;
     if (type == "image" || type == "background" || type == "text" || type == "obstacle" || type == "end") { //draws each image
       if (type == "image"){
-        ctx.addEventListener('load', function() {
+        this.addEventListener('load', function() {
           ctx.drawImage(this.image,
           this.x,
           this.y,
@@ -206,7 +206,7 @@ function component(width, height, color, x, y, type) {
         }, false);
       }
       if (type == "end"){
-        ctx.addEventListener('load', function() {
+        this.addEventListener('load', function() {
           ctx.drawImage(this.image,
           this.x,
           this.y,
@@ -214,7 +214,7 @@ function component(width, height, color, x, y, type) {
         }, false);
       }
       if (type == "obstacle"){
-        ctx.addEventListener('load', function() {
+        this.addEventListener('load', function() {
           ctx.drawImage(this.image,
           this.x,
           this.y,
@@ -222,7 +222,7 @@ function component(width, height, color, x, y, type) {
         }, false);
       }
       if (type == "background") {
-        ctx.addEventListener('load', function() {
+        this.addEventListener('load', function() {
           ctx.drawImage(this.image,
           this.x,
           this.y,
