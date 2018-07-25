@@ -852,7 +852,6 @@ if ( x == 16 && ok != 1){//check first space (start game)
      document.getElementById("gamescreen").style.display= "none";
      document.getElementById("sixthscreen").style.display= "block";
      window.current_screen = "sixthscreen";
-
    }
    else if (current_screen === "sixthscreen") {
      document.getElementById("startScreen").style.display= "none";
