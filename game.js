@@ -126,13 +126,11 @@ if (gender == 1){//girl
 }
 
 
-var backImg= new Image();
-backImg.src= "background/Kid.svg";
 end = new component(480, 270, "background/gameover.svg", 0, 0, "end");
 myScore = new component("15px", "Consolas", "black", 20, 20, "text");
 myLives = new component("15px", "Consolas", "black", 20, 40, "text");
 myGamePiece = new component(80, 100, babyImg, 10, 100, "image");
-myBackground = new component(3700, 270, backImg, -50, 0, "background");
+myBackground = new component(3700, 270, "background/Kid.svg", -50, 0, "background");
 myObstacle = new component(10, 10, "", 0, 0, "obstacle");
 
 myGamePiece.gravity= 1.6;
@@ -200,6 +198,7 @@ function component(width, height, color, x, y, type) {
     ctx = myGameArea.context;
     if (type == "image" || type == "background" || type == "text" || type == "obstacle" || type == "end") { //draws each image
       if (type == "image"){
+        console.log(this.image);
         ctx.drawImage(this.image,
         this.x,
         this.y,
