@@ -198,42 +198,32 @@ function component(width, height, color, x, y, type) {
     ctx = myGameArea.context;
     if (type == "image" || type == "background" || type == "text" || type == "obstacle" || type == "end") { //draws each image
       if (type == "image"){
-        this.image.addEventListener('load', function() {
           ctx.drawImage(this.image,
           this.x,
           this.y,
           this.width, this.height);
-        }, false);
       }
       if (type == "end"){
-        this.image.addEventListener('load', function() {
           ctx.drawImage(this.image,
           this.x,
           this.y,
           this.width, this.height);
-        }, false);
       }
       if (type == "obstacle"){
-        this.image.addEventListener('load', function() {
           ctx.drawImage(this.image,
           this.x,
           this.y,
           this.width, this.height);
-        }, false);
       }
       if (type == "background") {
-        this.image.addEventListener('load', function() {
-          ctx.drawImage(this.image,
+          ctx.drawImage(thise.imag,
           this.x,
           this.y,
           this.width, this.height);
-        }, false);
-        this.image.addEventListener('load', function() {
           ctx.drawImage(this.image,
           this.x + this.width-60,
           this.y,
           this.width, this.height);
-        }, false);
       }
       if (type == "text") {
         ctx.font = this.width + " " + this.height;
@@ -469,73 +459,73 @@ if (gender == 0){ //boy
 else if(gender == 1){ //girl
   if (skin == 0){ // 0 to 1, lightest to darkest
     if (hair == 0){
-      teenImg = "teen/girl/skin1/blackHair.svg";
+      teenImg = "teen/girl/Skin1/blackHair.svg";
       adultImg = "adult/woman/skin1/blackHair.svg";
     }
     if (hair == 1){
-      teenImg = "teen/girl/skin1/blondHair.svg";
+      teenImg = "teen/girl/Skin1/blondHair.svg";
       adultImg = "adult/woman/skin1/blondHair.svg";
     }
     if (hair == 2){
-      teenImg = "teen/girl/skin1/brownHair.svg";
+      teenImg = "teen/girl/Skin1/brownHair.svg";
       adultImg = "adult/woman/skin1/brownHair.svg";
     }
     if (hair == 3){
-      teenImg = "teen/girl/skin1/lightBrownHair.svg";
+      teenImg = "teen/girl/Skin1/lightBrownHair.svg";
       adultImg = "adult/woman/skin1/lightBrownHair.svg";
     }
   }
   if (skin == 1){
     if (hair == 0){
-      teenImg = "teen/girl/skin2/blackHair.svg";
+      teenImg = "teen/girl/Skin2/blackHair.svg";
       adultImg = "adult/woman/skin2/blackHair.svg";
     }
     if (hair == 1){
-      teenImg = "teen/girl/skin2/blondHair.svg";
+      teenImg = "teen/girl/Skin2/blondHair.svg";
       adultImg = "adult/woman/skin2/blondHair.svg";
     }
     if (hair == 2){
-      teenImg = "teen/girl/skin2/brownHair.svg";
+      teenImg = "teen/girl/Skin2/brownHair.svg";
       adultImg = "adult/woman/skin2/brownHair.svg";
     }
     if (hair == 3){
-      teenImg = "teen/girl/skin2/lightBrownHair.svg";
+      teenImg = "teen/girl/Skin2/lightBrownHair.svg";
       adultImg = "adult/woman/skin2/LightBrownHair.svg";
     }
   }
   if (skin == 2){
     if (hair == 0){
-      teenImg = "teen/girl/skin3/blackHair.svg";
+      teenImg = "teen/girl/Skin3/blackHair.svg";
       adultImg = "adult/woman/skin3/blackHair.svg";
     }
     if (hair == 1){
-      teenImg = "teen/girl/skin3/blondHair.svg";
+      teenImg = "teen/girl/Skin3/blondHair.svg";
       adultImg ="adult/woman/skin3/blondHair.svg";
     }
     if (hair == 2){
-      teenImg = "teen/girl/skin3/brownHair.svg";
+      teenImg = "teen/girl/Skin3/brownHair.svg";
       adultImg ="adult/woman/skin3/brownHair.svg";
     }
     if (hair == 3){
-      teenImg = "teen/girl/skin3/lightBrownHair.svg";
+      teenImg = "teen/girl/Skin3/lightBrownHair.svg";
       adultImg = "adult/woman/skin3/lightBrownHair.svg";
     }
   }
   if (skin == 3){
     if (hair == 0){
-      teenImg = "teen/girl/skin4/blackHair.svg";
+      teenImg = "teen/girl/Skin4/blackHair.svg";
       adultImg = "adult/woman/skin4/blackHair.svg";
     }
     if (hair == 1){
-      teenImg = "teen/girl/skin4/blondHair.svg";
+      teenImg = "teen/girl/Skin4/blondHair.svg";
       adultImg = "adult/woman/skin4/blondHair.svg";
     }
     if (hair == 2){
-      teenImg = "teen/girl/skin4/brownHair.svg";
+      teenImg = "teen/girl/Skin4/brownHair.svg";
       adultImg = "adult/woman/skin4/brownHair.svg";
     }
     if (hair == 3){
-      teenImg = "teen/girl/skin4/lightBrownHair.svg";
+      teenImg = "teen/girl/Skin4/lightBrownHair.svg";
       adultImg = "adult/woman/skin4/lightBrownHair.svg";
     }
   }
@@ -543,7 +533,7 @@ else if(gender == 1){ //girl
 
 if (score == 50 && count_score == 0){ // once reaches score of 50 (first time), changes to next state(to teen)
   myGameArea.clear();
-  myBackground = new component(3700, 270, "background/teen.svg", -50, 0, "background"); // change to teen background
+  myBackground = new component(3700, 270, "background/Teen.svg", -50, 0, "background"); // change to teen background
   myObstacle = new component(100,100, "", 0, 0, "obstacle");
   if (gender == 0){
     myGamePiece = new component(50, 100, teenImg, 10, 100, "image"); //change to boy sprite (different dimensions)
@@ -557,7 +547,7 @@ if (score == 50 && count_score == 0){ // once reaches score of 50 (first time), 
 
 if (score == 50 && count_score == 1){ // second time reaching 50, changes to adult
   myGameArea.clear();
-  myBackground = new component(3700, 270, "background/adult.svg", -50, 0, "background"); //change to adult background
+  myBackground = new component(3700, 270, "background/Adult.svg", -50, 0, "background"); //change to adult background
   myGamePiece = new component(30, 100, adultImg, 10, 100, "image");
   myObstacle = new component(100,100, "", 0, 0, "obstacle");
   score = 0; // reset level score
