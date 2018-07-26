@@ -216,7 +216,7 @@ function component(width, height, color, x, y, type) {
           this.width, this.height);
       }
       if (type == "background") {
-          ctx.drawImage(thise.imag,
+          ctx.drawImage(this.image,
           this.x,
           this.y,
           this.width, this.height);
