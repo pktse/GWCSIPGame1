@@ -490,7 +490,7 @@ else if(gender == 1){ //girl
     }
     if (hair == 3){
       teenImg = "teen/girl/Skin2/lightBrownHair.svg";
-      adultImg = "adult/woman/skin2/LightBrownHair.svg";
+      adultImg = "adult/woman/skin2/lightBrownHair.svg";
     }
   }
   if (skin == 2){
