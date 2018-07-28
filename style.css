@@ -11,9 +11,6 @@ body {
   position: absolute;
   top: 400px;
 }
-#p2{
-  bottom: 30px;
-}
 
 #arrowLeft{
   left: 100px;
@@ -186,12 +183,15 @@ body {
 
 #thirdscreen #stork2 {
     position: absolute;
-    top: -240px;
+    top: -200px;
     left: -100%;
     margin: 7em -244px;
     animation: slide 5s ;
 }
 
+#p2{
+  bottom: 30px;
+}
 
  /* fourth */
  #fourthscreen p {
@@ -292,8 +292,16 @@ th, td {
 }
 
 #press{
-  /* margin: auto; */
-  margin-left: 220px;
+  margin-left: 15%;
+
+  margin-top: 10%;
+  text-align: center;
+}
+
+#controls{
+  bottom: 10px;
+  text-align: center;
+  margin-top: 30%;
 }
 
 #key{
@@ -344,7 +352,7 @@ th, td {
 }
 
 #gamescreen p {
-  text-align:center;
+  /* text-align:center; */
 }
 
 .new2:hover {
