@@ -14,13 +14,13 @@ function myFunction() {
 }
 
 function random(){
-  document.getElementById("startScreen").style.display= "block";
   document.getElementById("secondscreen").style.display= "none";
   document.getElementById("thirdscreen").style.display= "none";
   document.getElementById("fourthscreen").style.display= "none";
   document.getElementById("fifthscreen").style.display= "none";
   document.getElementById("sixthscreen").style.display= "none";
   document.getElementById("gamescreen").style.display= "none";
+  document.getElementById("startScreen").style.display= "block";
 
   console.log("test");
   current_screen= "start";
