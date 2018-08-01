@@ -6,12 +6,12 @@ body {
 }
 
 #down{
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 
 #down2{
-  bottom: 10px;  
+  bottom: 10px;
 }
 
 #arrowright{
@@ -222,7 +222,7 @@ body {
 }
 
 canvas{
-  margin: 80px;
+  margin: 40px;
 }
 
 /* fifth */
