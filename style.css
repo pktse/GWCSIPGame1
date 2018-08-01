@@ -6,7 +6,12 @@ body {
 }
 
 #down{
-  margin-top: 10%;  
+  margin-top: 10%;
+}
+
+
+#down2{
+  bottom: 10px;  
 }
 
 #arrowright{
