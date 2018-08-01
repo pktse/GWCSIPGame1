@@ -5,6 +5,10 @@ body {
   overflow: hidden;
 }
 
+#down{
+  margin-top: 10%;  
+}
+
 #arrowright{
   right: 100px;
   font-size:100px;
